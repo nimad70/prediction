@@ -1,0 +1,5 @@
+name: iresultenv
+channels:
+  - defaults
+prefix: C:\Users\nima\Anaconda3\envs\iresultenv
+
