@@ -1,5 +1,9 @@
 import xlrd
 
+# Substitude absent with 0
+def refine_list(sample_list):
+    pass
+
 # Giving location of the file
 file_location = ('doc/results.xlsx')
 
@@ -39,3 +43,9 @@ for row in range(sheet.nrows):
 for _ in data:
     print(_)
 """
+
+# x = []
+# y = []
+# for line in data:
+#     x.append(line[0:3])
+#     y.append(line[3])
