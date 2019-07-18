@@ -1,8 +1,18 @@
 import xlrd
 
+
 # Substitude absent with 0
 def refine_list(sample_list):
-    pass
+    # ref_list = []
+    for lst in sample_list:
+        # print(_)
+        for _, item in enumerate(lst):
+            # print(_, "  ", item)
+            if item == 'ABSENT':
+                lst[_] = 0
+    print(sample_list)
+
+
 
 # Giving location of the file
 file_location = ('doc/results.xlsx')
@@ -43,6 +53,10 @@ for row in range(sheet.nrows):
 for _ in data:
     print(_)
 """
+
+# List with 0 as 'absent' values
+# refined_data_list
+refine_list(data)
 
 # x = []
 # y = []
