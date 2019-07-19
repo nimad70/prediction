@@ -10,16 +10,18 @@
 import xlrd
 
 
-# Substitude absent with 0
+# Replacing 'absent' with 0
+# List with 0 instead of 'absent' will be returned
 def refine_list(sample_list):
-    # ref_list = []
+    # Search through every list in the list 
+    # and replacing 'absent' with 0
     for lst in sample_list:
-        # print(_)
         for _, item in enumerate(lst):
             # print(_, "  ", item)
             if item == 'ABSENT':
                 lst[_] = 0
-    print(sample_list)
+    return sample_list
+    
 
 
 
@@ -64,8 +66,7 @@ for _ in data:
 """
 
 # List with 0 as 'absent' values
-# refined_data_list
-refine_list(data)
+refined_data_list = refine_list(data)
 
 # x = []
 # y = []
