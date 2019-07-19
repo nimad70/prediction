@@ -1,3 +1,12 @@
+# Author: Nima Daryabar
+"""
+    The purpose of the code is getting a list (e.g a list of IELTS scores),
+    if there is any 'absent' item in the list turn them to 0 and it will
+    calculate the score and put them in the end of the lists and at the end,
+    implement Decision Tree Regression on it.
+    So user can enter it's scores and it will guess it's score.
+    Just for Fun :D
+"""
 import xlrd
 
 
