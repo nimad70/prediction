@@ -23,6 +23,9 @@ def refine_list(sample_list):
     return sample_list
     
 
+def ielts_scores(ielts_list):
+    pass
+
 
 
 # Giving location of the file
@@ -67,6 +70,9 @@ for _ in data:
 
 # List with 0 as 'absent' values
 refined_data_list = refine_list(data)
+
+# ielts_scores_list = 
+ielts_scores(refined_data_list)
 
 # x = []
 # y = []
