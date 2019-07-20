@@ -92,11 +92,14 @@ refined_data_list = refine_list(data)
 
 # List with final score which is appended at the end of lists
 ielts_scores_list = ielts_scores(refined_data_list)
+# for _ in ielts_scores_list:
+#     print(_)
 
 
-
-# x = []
-# y = []
-# for line in data:
-#     x.append(line[0:3])
-#     y.append(line[3])
+# Training data for Decision Tree Regression
+x = []
+y = []
+for _, lst in enumerate(ielts_scores_list):
+    # print(_ , lst)
+    x.append(lst[0:4])
+    y.append(lst[4])
