@@ -123,4 +123,8 @@ writing_score = float(input("Writing score: "))
 user_scores = [speaking_score, listening_score, reading_score, writing_score]
 print(user_scores)
 
-print(clf.predict([user_scores]))
+# print(clf.predict([user_scores]))
+
+print()
+band_score = clf.predict([user_scores])
+print(f"result: {float(band_score)}")
