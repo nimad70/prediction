@@ -98,9 +98,13 @@ ielts_scores_list = ielts_scores(refined_data_list)
 
 
 # Training data for Decision Tree Regression
-x = []
+X = []
 y = []
 for _, lst in enumerate(ielts_scores_list):
     # print(_ , lst)
-    x.append(lst[0:4])
+    X.append(lst[0:4])
     y.append(lst[4])
+
+# Decision Tree Regression
+clf = tree.DecisionTreeRegressor()
+clf = clf.fit(X, y)
