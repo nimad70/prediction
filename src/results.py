@@ -121,10 +121,11 @@ reading_score = float(input("Reading score: "))
 writing_score = float(input("Writing score: "))
 
 user_scores = [speaking_score, listening_score, reading_score, writing_score]
-print(user_scores)
+# print(user_scores)
 
 # print(clf.predict([user_scores]))
 
+# Predicting the IELTS band score
 print()
 band_score = clf.predict([user_scores])
 print(f"result: {float(band_score)}")
