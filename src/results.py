@@ -8,6 +8,7 @@
     Just for Fun :D
 """
 import xlrd
+from sklearn import tree
 
 
 # Replacing 'absent' with 0
