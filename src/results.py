@@ -36,12 +36,14 @@ def ielts_scores(ielts_list):
         # print("lenght of list is: ", len(lst))
         # Calculate Score by dividing sum into lenght of list(i.e 4)
         score = sum / len(lst)
-        print(score)
-        print()
+        lst.append(score)
         # Just for check first 5 lists
-        if(_ == 5):
-            break
-        
+        # print(score)
+        # print(lst)
+        # print()
+        # if(_ == 5):
+            # break
+    return ielts_list
 
 
 
@@ -88,8 +90,10 @@ for _ in data:
 # List with 0 as 'absent' values
 refined_data_list = refine_list(data)
 
-# ielts_scores_list = 
-ielts_scores(refined_data_list)
+# List with final score which is appended at the end of lists
+ielts_scores_list = ielts_scores(refined_data_list)
+
+
 
 # x = []
 # y = []
