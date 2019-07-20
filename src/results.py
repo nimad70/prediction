@@ -109,8 +109,12 @@ for _, lst in enumerate(ielts_scores_list):
 clf = tree.DecisionTreeRegressor()
 clf = clf.fit(X, y)
 
+user_scores = []
 print("Enter your scores please")
 speaking_score = float(input("Speaking score: "))
 listening_score = float(input("Listening score: "))
 reading_score = float(input("Reading score: "))
 writing_score = float(input("Writing score: "))
+
+user_scores = [speaking_score, listening_score, reading_score, writing_score]
+print(user_scores)
