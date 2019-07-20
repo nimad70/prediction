@@ -5,6 +5,10 @@
     calculate the score and put them in the end of the lists and at the end,
     implement Decision Tree Regression on it.
     So user can enter it's scores and it will guess it's score.
+    Note that we don't need to use decision tree to predict an ielts band score 
+    cause you simply can add them together and then divid them into 4 but 
+    I just want to show you how you can use decision tree regression using a data set
+    and in future I'll promise i will use more rational data and do something more 
     Just for Fun :D
 """
 import xlrd
@@ -118,3 +122,5 @@ writing_score = float(input("Writing score: "))
 
 user_scores = [speaking_score, listening_score, reading_score, writing_score]
 print(user_scores)
+
+print(clf.predict([user_scores]))
