@@ -105,6 +105,12 @@ for _, lst in enumerate(ielts_scores_list):
     X.append(lst[0:4])
     y.append(lst[4])
 
-# Decision Tree Regression
+# Decision Tree Regression. tarining data set
 clf = tree.DecisionTreeRegressor()
 clf = clf.fit(X, y)
+
+print("Enter your scores please")
+speaking_score = float(input("Speaking score: "))
+listening_score = float(input("Listening score: "))
+reading_score = float(input("Reading score: "))
+writing_score = float(input("Writing score: "))
