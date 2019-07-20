@@ -23,8 +23,22 @@ def refine_list(sample_list):
     return sample_list
     
 
+# Calculate average for each list
 def ielts_scores(ielts_list):
-    pass
+    # Iterate through the list to calculate average for each item(list)
+    for _, lst in enumerate(ielts_list):
+        sum = 0
+        print(_, lst)
+        print()
+        for item in lst:
+            sum += item
+            print(sum)
+        print("lenght of list is: ", len(lst))
+        score = sum / len(lst)
+        print(score)
+        if(_ == 3):
+            break
+        
 
 
 
