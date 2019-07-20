@@ -28,15 +28,18 @@ def ielts_scores(ielts_list):
     # Iterate through the list to calculate average for each item(list)
     for _, lst in enumerate(ielts_list):
         sum = 0
-        print(_, lst)
-        print()
+        # print(_ , lst)
+        # Adding items in the list
         for item in lst:
             sum += item
-            print(sum)
-        print("lenght of list is: ", len(lst))
+            # print(sum)
+        # print("lenght of list is: ", len(lst))
+        # Calculate Score by dividing sum into lenght of list(i.e 4)
         score = sum / len(lst)
         print(score)
-        if(_ == 3):
+        print()
+        # Just for check first 5 lists
+        if(_ == 5):
             break
         
 
