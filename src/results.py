@@ -76,6 +76,7 @@ user_scores = [speaking_score, listening_score, reading_score, writing_score]
 # print(user_scores)
 
 print()
-print("User band score: ", sum(user_scores)/len(user_scores))
+print(f"User band score: {sum(user_scores)/len(user_scores)}")
 
 predicted_score = predict_score(ielts_scores_list, user_scores)
+print(f"Predicted score using DTR: {float(predicted_score)}")
