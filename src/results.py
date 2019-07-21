@@ -14,6 +14,7 @@
 import xlrd
 from replace import refine_list
 from average import ielts_scores
+from predict import predict_score
 
 
 # Giving location of the file
@@ -76,3 +77,5 @@ user_scores = [speaking_score, listening_score, reading_score, writing_score]
 
 print()
 print("User band score: ", sum(user_scores)/len(user_scores))
+
+# predicted_score = 
