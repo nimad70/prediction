@@ -2,6 +2,7 @@
 """
     Using Decision Tree Regression to predict band score from given scores.
 """
+from sklearn import tree
 
 def predict_score(scores_list, given_scores):
     # Training data for Decision Tree Regression
