@@ -64,9 +64,6 @@ ielts_scores_list = ielts_scores(refined_data_list)
 # for _ in ielts_scores_list:
 #     print(_)
 
-
-
-
 user_scores = []
 print("Enter your scores please")
 speaking_score = float(input("Speaking score: "))
@@ -77,4 +74,5 @@ writing_score = float(input("Writing score: "))
 user_scores = [speaking_score, listening_score, reading_score, writing_score]
 # print(user_scores)
 
-
+print()
+print("User band score: ", sum(user_scores)/len(user_scores))
