@@ -12,7 +12,6 @@
     Just for Fun :D
 """
 import xlrd
-from sklearn import tree
 from replace import refine_list
 from average import ielts_scores
 
