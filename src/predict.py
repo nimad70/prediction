@@ -15,3 +15,9 @@ def predict_score(scores_list, given_scores):
     # Decision Tree Regression. tarining data set
     clf = tree.DecisionTreeRegressor()
     clf = clf.fit(X, y)
+    # print(clf.predict([user_scores]))
+
+    # Predicting the IELTS band score
+    print()
+    band_score = clf.predict([user_scores])
+    print(f"result: {float(band_score)}")
