@@ -1,6 +1,7 @@
 # Author: Nima Daryabar
 """
     Using Decision Tree Regression to predict band score from given scores.
+    predicted band score is returned
 """
 from sklearn import tree
 
