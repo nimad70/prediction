@@ -1,3 +1,10 @@
+# Author: Nima Daryabar
+"""
+    A list will be passed to ielts_scores() function and
+    band score will be calculated for each list of scores
+    and result will be added at the end of list and the final list
+    with results and scores is returned
+"""
 # Calculate average for each list
 def ielts_scores(ielts_list):
     # Iterate through the list to calculate average for each item(list)
