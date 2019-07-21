@@ -21,7 +21,6 @@ def predict_score(scores_list, given_scores):
     # print(clf.predict([user_scores]))
 
     # Predicting the IELTS band score
-    print()
     band_score = clf.predict([given_scores])
-    print(f"result: {float(band_score)}")
+    # print(f"result: {float(band_score)}")
     return band_score
