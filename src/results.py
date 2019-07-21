@@ -13,10 +13,8 @@
 """
 import xlrd
 from sklearn import tree
+from replace import refine_list
 
-
-
-    
 
 # Calculate average for each list
 def ielts_scores(ielts_list):
